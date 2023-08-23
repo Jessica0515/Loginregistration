@@ -3,23 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:foregroundTint="#FFFFFF">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/top_background1"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-4dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="-4dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="219dp"
         android:layout_height="568dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/community"
-        tools:layout_editor_absoluteY="195dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="178dp"
+        app:tint="#14FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="158dp"
+        android:background="#00404040"
+        android:drawableTint="#00FFFFFF"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#5E3FB5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="448dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
